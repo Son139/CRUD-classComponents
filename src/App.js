@@ -1,25 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import ListUser from "./components/ListUser";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
+    return (
+        <div
+            className="App"
+            style={{
+                width: 1000,
+                margin: "0 auto",
+                display: "flex",
+                flexDirection: "column",
+                backgroundColor: "white",
+                padding: "30px 30px 20px",
+                boxShadow: "0 0 10px 4px #bfbfbf",
+                borderRadius: 10,
+            }}
         >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+            <ListUser />
+        </div>
+    );
 }
 
 export default App;
